@@ -1,6 +1,6 @@
 <?php
 /*
-  Plugin Name: STAT Skeleton
+  Plugin Name: STAT Boilerplate
   Description: Boilerplate WordPress plugin. Rename me and build something awesome!
   Version:     1.0.0
   Author:      STAT
@@ -9,7 +9,7 @@
   License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
 
-class StatSkeleton {
+class StatBoilerplate {
 
 	private static $instance;
 
@@ -42,4 +42,4 @@ class StatSkeleton {
 	}
 }
 
-StatSkeleton::get_instance();
+StatBoilerplate::get_instance();
