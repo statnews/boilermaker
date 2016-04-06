@@ -1,0 +1,39 @@
+{
+	// WordPress jscs configuration
+	"preset": "jquery",
+	"requireDotNotation": {
+			"allExcept": ["snake_case", "keywords"]
+	},
+	"disallowSpaceAfterPrefixUnaryOperators": ["++", "--", "+", "-", "~"],
+	"disallowSpaceBeforePostfixUnaryOperators": true,
+	"maximumLineLength": null,
+	"requireVarDeclFirst": true,
+	"requireSpaceAfterPrefixUnaryOperators": ["!"],
+	"requireSpacesInsideBrackets": null,
+	"requireSpacesInsideParentheses": {
+			"all": true,
+			"except": [ "{", "}", "[", "]", "function" ]
+	},
+	"validateQuoteMarks": "'",
+
+	// Deviation from WordPress configuration
+	// They require captializd comments, but we don't.
+
+	"requireCapitalizedComments": false,
+
+	// Additional options on top of WordPress configuration
+
+	// Ensure that blocks and switch statements are indented with tabs.
+	"validateIndentation": "\t",
+
+	/* For other types of statements (e.g., variable declarations), we can't
+	 * prevent the use of spaces or enforce the number of tabs, but we can at
+	 * least disallow mixing tabs and spaces within the same line. */
+	"disallowMixedSpacesAndTabs": true,
+
+	/* They're the next best thing to ES6 templates. */
+	"disallowMultipleLineStrings": false,
+
+	/* Disable annoying "Line comments must be preceded with a blank line" errors. */
+	"requirePaddingNewLinesBeforeLineComments": false
+}
