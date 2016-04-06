@@ -1,7 +1,7 @@
 <?php
 /*
   Plugin Name: STAT Boilerplate
-  Description: Boilerplate WordPress plugin. Rename me and build something awesome!
+  Description: Boilerplate WordPress plugin. Rename me and build something awesome with me!
   Version:     1.0.0
   Author:      STAT
   Author URI:  https://www.statnews.com/
