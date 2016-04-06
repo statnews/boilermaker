@@ -1,23 +1,21 @@
-/*!
- * jQuery lightweight plugin boilerplate
- * Modified to follow STAT/WordPress coding standards
- * Original author: @ajpiano
- * Further changes, comments: @addyosmani
- * Code style tweaks: @ryandebeasi
+/*
+ * jQuery Plugin Skeleton v 1.0
+ * A boilerplate for creating jQuery plugins.
+ *
+ * Briefly describe what the plugin does.
+ *
+ * Developed by STAT
  * Licensed under the MIT license
- * https://github.com/statnews/boilermaker
- * Original with annotations: https://git.io/vVrBG
+ * List any dependencies or requirements here.
  */
 
 ;(function( $, window, document, undefined ) {
 
-	// Create the defaults once
 	var pluginName = 'defaultPluginName',
 		defaults = {
 			propertyName: 'value'
 		};
 
-	// The actual plugin constructor
 	function Plugin( element, options ) {
 		this.element = element;
 		this.options = $.extend( {}, defaults, options );
@@ -30,14 +28,17 @@
 	Plugin.prototype = {
 
 		init: function() {
-
+			// Store a reference to the plugin so that we can get at it easily later,
+			// even if the scope of `this` changes.
+			var plugin = this;
 		},
 
 		yourOtherFunction: function( el, options ) {
-
+			var plugin = this;
 		}
 	};
 
+	// Prevent multiple instantiations.
 	$.fn[pluginName] = function( options ) {
 		return this.each(function() {
 			if ( ! $.data( this, 'plugin_' + pluginName ) ) {
