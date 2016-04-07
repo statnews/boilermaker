@@ -18,6 +18,7 @@
 
 	function Plugin( element, options ) {
 		this.element = element;
+		this.$element = $( this.element );
 		this.options = $.extend( {}, defaults, options );
 		this._defaults = defaults;
 		this._name = pluginName;
