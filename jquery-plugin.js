@@ -1,6 +1,7 @@
 /*
  * jQuery Plugin Skeleton v 1.0
  * A boilerplate for creating jQuery plugins.
+ * Based on https://jqueryboilerplate.com/ and adapted for WordPress JS standards.
  *
  * Briefly describe what the plugin does.
  *
