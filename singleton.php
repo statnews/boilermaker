@@ -1,7 +1,7 @@
 <?php
 /*
   STAT Singleton Boilerplate
-	http://www.phptherightway.com/pages/Design-Patterns.html#singleton
+  http://www.phptherightway.com/pages/Design-Patterns.html#singleton
 */
 
 class StatSingletonBoilerplate {
