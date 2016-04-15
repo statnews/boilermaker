@@ -1,9 +1,8 @@
 /*
- * jQuery Plugin Skeleton v 1.0
+ * STAT jQuery Plugin Skeleton
  * A boilerplate for creating jQuery plugins.
- * Based on https://jqueryboilerplate.com/ and adapted for WordPress JS standards.
- *
- * Briefly describe what the plugin does.
+ * Based on https://jqueryboilerplate.com/ and adapted for WordPress JS
+ * standards and our own common use cases.
  *
  * Developed by STAT
  * Licensed under the MIT license
@@ -35,7 +34,13 @@
 			var plugin = this;
 		},
 
-		yourOtherFunction: function( el, options ) {
+		yourPublicFunction: function() {
+			var plugin = this;
+		},
+
+		_yourPrivateFunction: function() {
+			// The underscore indicates that this function is private. This is a
+			// convention only: other code technically can access this function.
 			var plugin = this;
 		}
 	};
