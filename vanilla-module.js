@@ -1,10 +1,11 @@
-// Vanilla JavaScript with revealing module pattern & namespace
-//
-// Further reading:
-// https://addyosmani.com/blog/essential-js-namespacing/
-// https://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript
-//
-// TODO: Add CommonJS or UMD Wrapper
+/* Vanilla JavaScript with revealing module pattern & namespace
+*
+* Further reading:
+* https://addyosmani.com/blog/essential-js-namespacing/
+* https://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript
+*
+* TODO: Add CommonJS wrapper, and only use statGlobal if no module loader is available.
+*/
 
 window.statGlobal = window.statGlobal || {};
 
