@@ -1,11 +1,19 @@
-/* Vanilla JavaScript module with revealing module pattern & namespace
-*
-* TODO: Add CommonJS wrapper, and only use statGlobal if no module loader is available.
-*/
+/*
+ * My Example Module
+ * Vanilla JavaScript module with revealing module pattern and namespace
+ *
+ * Developed by STAT
+ * Licensed under the MIT license
+ *
+ * List any dependencies or requirements here.
+ *
+ * TODO: add CommonJS wrapper, and only use statGlobal if no module loader is
+ * available.
+ */
 
 window.statGlobal = window.statGlobal || {};
 
-statGlobal.myModule = (function() {
+statGlobal.myExampleModule = (function() {
 	var publicVar = 'JavaScript is great!',
 		privateVar = 'But so is PHP.';
 
