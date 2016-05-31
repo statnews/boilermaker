@@ -1,6 +1,6 @@
 /*
  * My Example Module
- * Vanilla JavaScript module with revealing module pattern and namespace
+ * JavaScript module with revealing module pattern and namespace
  *
  * Developed by STAT
  * Licensed under the MIT license
@@ -11,9 +11,10 @@
  * available.
  */
 
+// If statGlobal doesn't exist, create it.
 window.statGlobal = window.statGlobal || {};
 
-statGlobal.myExampleModule = (function() {
+statGlobal.myExampleModule = (function( $ ) {
 	var publicVar = 'JavaScript is great!',
 		privateVar = 'But so is PHP.';
 
@@ -27,8 +28,17 @@ statGlobal.myExampleModule = (function() {
 		return number - 42;
 	}
 
+	// Example of a public function that uses jQuery
+	function addClass() {
+		// We have a local $ variable that we can use even when jQuery is running in
+		// no-conflict mode. If jQuery isn't required by this module, just remove
+		// `$` on line 16 and `jQuery` on line 41.
+		$( 'article' ).addClass( 'cool' );
+	}
+
 	return {
 		statement: publicVar,
-		addStuff: addStuff
+		addStuff: addStuff,
+		addClass: addClass
 	};
-})();
+})( jQuery );
