@@ -1,6 +1,6 @@
 # Sass/CSS Style Guide
 
-Sass CSS are powerful tools, but without proper care they can get out of hand quickly. Here are some guidelines to keep them manageable.
+Sass and CSS are powerful tools, but without proper care they can get out of hand quickly. Here are some guidelines to keep them manageable.
 
 ## scss-lint
 
